@@ -49,7 +49,7 @@ def testTriplet(t5):
         diags[-1].remove(cmn)
 
     # create list of candidates for remaining values
-    candidates = range(1,20)
+    candidates = list(range(1,20))
     candidates.remove(cmn)
     for d in diags:
         for e in d:
