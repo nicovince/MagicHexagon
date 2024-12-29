@@ -1,0 +1,9 @@
+name: run solver
+run-name: Solve hexagon 
+on: [push]
+jobs:
+  solve:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: ./magic_hexagon_solver.py
