@@ -81,9 +81,9 @@ def testPermutation(p, candidates):
     sol = getMiddleSolution(cornCouples, candidates)
     if sol != None:
         if testTriangles(getVectBoard(p,sol)):
-            print sol
-            print p
-            print getVectBoard(p,sol)
+            print(sol)
+            print(p)
+            print(getVectBoard(p,sol))
             display(getVectBoard(p, sol))
 
 
@@ -132,11 +132,11 @@ def getFinalVal(c):
 #   xx  xx  xx  xx
 #     xx  xx  xx
 def display(board):
-    print "    %2d  %2d  %2d" % (board[0], board[1], board[2])
-    print "  %2d  %2d  %2d  %2d" % (board[3], board[4], board[5], board[6])
-    print "%2d  %2d  %2d  %2d  %2d" % (board[7], board[8], board[9], board[10], board[11])
-    print "  %2d  %2d  %2d  %2d" % (board[12], board[13], board[14], board[15])
-    print "    %2d  %2d  %2d" % (board[16], board[17], board[18])
+    print("    %2d  %2d  %2d" % (board[0], board[1], board[2]))
+    print("  %2d  %2d  %2d  %2d" % (board[3], board[4], board[5], board[6]))
+    print("%2d  %2d  %2d  %2d  %2d" % (board[7], board[8], board[9], board[10], board[11]))
+    print("  %2d  %2d  %2d  %2d" % (board[12], board[13], board[14], board[15]))
+    print("    %2d  %2d  %2d" % (board[16], board[17], board[18]))
 
 
 def getVectBoard(diags, middles):
